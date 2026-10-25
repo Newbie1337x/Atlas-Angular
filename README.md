@@ -12,7 +12,7 @@
 
 🇬🇧 English · [🇪🇸 Español](docs/README.es.md)
 
-**[▶ Try the live demo](https://newbie1337x.github.io/atlas/)** — no login, no backend, auto-loaded with sample data
+**[▶ Try the live demo](https://newbie1337x.github.io/Atlas-Angular/)** — no login, no backend, auto-loaded with sample data
 
 </div>
 
@@ -36,7 +36,7 @@ It's deliberately rigid: one fixed shell, one fixed flow, no customization. A li
 
 ## Live demo
 
-The [demo build](https://newbie1337x.github.io/atlas/) is the real app — same components, same drag-and-drop, same live session tracker — running standalone on GitHub Pages with no Proteus instance behind it. Two things make that possible:
+The [demo build](https://newbie1337x.github.io/Atlas-Angular/) is the real app — same components, same drag-and-drop, same live session tracker — running standalone on GitHub Pages with no Proteus instance behind it. Two things make that possible:
 
 - **`UsersApi`/`TrainingApi` swapped for in-memory mocks** via a plain DI provider override (`{ provide: TrainingApi, useClass: DemoTrainingApi }` in `app.config.ts`) when `environment.demoMode` is set — every screen that reads or writes through those services works unmodified, backed by canned data instead of HTTP calls.
 - **Auto-authenticated on load** by hydrating the session with a self-signed JWT built client-side (`core/demo/demo-session.ts`). Nothing checks the signature on the frontend — decoding the payload is all `SessionStore` ever needed — so this seeds real app state without a token ever touching a server.

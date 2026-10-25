@@ -9,7 +9,7 @@ const FRAME_HEIGHT = 852;
  *  needs to shrink the frame by. */
 const FRAME_CHROME = 190;
 
-const GITHUB_URL = 'https://github.com/Newbie1337x/atlas';
+const GITHUB_URL = 'https://github.com/Newbie1337x/Atlas-Angular';
 
 /**
  * Desktop landing wrapped around the demo build — see App's doc comment
